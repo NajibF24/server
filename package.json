@@ -5,6 +5,12 @@
   "engines": {
     "node": "16.x"
   },
+  "builds": [
+    {
+      "src": "./bin/www",
+      "use": "@vercel/node"
+    }
+  ],
   "scripts": {
     "start": "nodemon ./bin/www",
     "dev": "env-cmd -f ./.env.local nodemon ./bin/www",
